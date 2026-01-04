@@ -18,6 +18,7 @@ btn.addEventListener('click', (ev)=>{
     let type = document.querySelector('#type').value
     let title = document.querySelector('#title').value.replaceAll(' ', '_')
     let url9 = `http://www.omdbapi.com/?i=tt3896198&apikey=9e874eb6&type=${type}&s=${title}`
+    console.log(url9)
     fetch(url9)
     .then(promise => promise.json())
     .then(data => {
