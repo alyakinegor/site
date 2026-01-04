@@ -17,8 +17,8 @@ form.addEventListener('submit', (ev)=>{
 btn.addEventListener('click', (ev)=>{
     let type = document.querySelector('#type').value
     let title = document.querySelector('#title').value.replaceAll(' ', '_')
-    let url = `http://www.omdbapi.com/?i=tt3896198&apikey=9e874eb6&type=${type}&s=${title}`
-    fetch(url)
+    let url9 = `http://www.omdbapi.com/?i=tt3896198&apikey=9e874eb6&type=${type}&s=${title}`
+    fetch(url9)
     .then(promise => promise.json())
     .then(data => {
         BooksList.innerHTML = ''
