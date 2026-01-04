@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding: 5px;
+            position: absolute;
+            top: 1%;
+            left: 40%;
+        }
+        #wrap {
+            padding: 7px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+        }
+        input, select {
+            padding: 7px;
+        }
+        button {
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        span {
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            padding: 10px;
+            border: 1px solid black;
+
+        }
+        #list-books {
+            display: flex;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+        }
+        #pagination {
+            position: absolute;
+            top: 70%;
+            left: 42%;
+        }
+        #a1, #a2, #a3, #a4 {
+            margin: 0px;
+            width: 30px;
+            height: 30px;
+        }
+        #divDetails {
+            position: absolute;
+            top: 90%;
+            left:35%;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <p>Search: </p>
+        <div id = 'wrap'>
+            <p>Title: </p>
+            <input type = 'text' id = 'title'>
+            <p>Type: </p>
+            <select id = 'type'>
+                <option>movie</option>
+                <option>series</option>
+                <option>episode</option>
+            </select>
+            <button type = 'button' id = 'search'>Search</button>
+        </div>
+    </form>
+    <div id = 'list-books'>
+
+    </div>
+    <div id = 'pagination'>
+        <button id="a1">1</button>
+        <button id="a2">2</button>
+        <button id="a3">3</button>
+        <button id="a4">4</button>
+    </div>
+    <div id = 'divDetails'>
+
+    </div>
+    <script src = './script.js'></script>
+</body>
+</html>
