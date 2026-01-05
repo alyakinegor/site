@@ -87,7 +87,7 @@ btn.addEventListener('click', (ev)=>{
                             id = el['imdbID']
                         }
                     })
-                    let url_2 = `http://www.omdbapi.com/?i=${id}&apikey=9e874eb6`
+                    let url_2 = `https://www.omdbapi.com/?i=${id}&apikey=9e874eb6`
                 fetch(url_2)
                 .then(promise => promise.json())
                 .then(data => {
